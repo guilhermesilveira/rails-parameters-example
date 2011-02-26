@@ -1,0 +1,13 @@
+== Rails method parameter example
+
+This example shows how to set method parameters using Rails. Although the same
+functionality can be achieved with filters+instance variables, playing with instance
+variables means tight coupling but we cant remove it as the template engine is also based
+on that. This shows the coupling between the template engine and controller due to
+such design decision (accessing instance variables directly).
+
+Check the ProductsController for usage and ApplicationController for the simple
+implementation strategy. This version runs only on 1.9 but as pointed on the ruby mailing
+list it can also be run on 1.8.x with aditional libraries.
+
+This is just a design example on what can be done.
